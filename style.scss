@@ -1,0 +1,72 @@
+@import "./_variables.scss";
+
+html {
+  font-family: myFont;
+}
+body {
+  color: #ffffff;
+  font-family: myFont;
+  margin: 0px auto;
+  background-color: $primaryColour;
+}
+
+.secondaryText {
+  @include secondaryText;
+}
+
+.nav {
+  height: 4rem;
+  width: 100%;
+  background-color: $primaryColour;
+  position: fixed;
+  z-index: 1;
+
+  .left {
+    left: 5rem;
+    @include nav-content;
+  }
+  .right {
+    // NOT SHOWING CONTENT
+    right: 5rem;
+    @include nav-content;
+  }
+}
+
+.top {
+  @include flexCenter(column, $primaryColour);
+}
+.btn {
+  &.lBtn {
+    @include btn();
+    border: 2px solid #ffffff;
+    color: #f70a8cb9;
+  }
+  &.rBtn {
+    @include btn();
+    border: 2px solid #f70a8cc9;
+    color: #ffff;
+  }
+}
+
+// rotator
+.second {
+  @include flexCenter(column, #3d3d3d);
+  transform: $diagonal;
+  h2,
+  p {
+    transform: $skewyContent;
+  }
+}
+
+.third {
+  @include flexCenter(column, rgba(0, 0, 0, 0));
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 45px;
+}
+
+.primSeconText {
+  @include thirText;
+}

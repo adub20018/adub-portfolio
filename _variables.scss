@@ -1,0 +1,49 @@
+@font-face {
+  font-family: myFont;
+  src: url(OpenSans-VariableFont.ttf);
+}
+
+@mixin btn() {
+  color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #ffffff00;
+  border-radius: 5px;
+}
+
+@mixin flexCenter($direction, $background) {
+  height: 58vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+  background-color: $background;
+}
+
+@mixin nav-content {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  padding-top: 1rem;
+}
+
+@mixin secondaryText() {
+  font-size: 18px;
+  color: $secondaryColour;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+@mixin thirText() {
+  font-size: 18px;
+  color: #aaaaaa;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+$diagonal: skewY(-5deg);
+$skewyContent: skewY(5deg);
+$primaryColour: #292929;
+$secondaryColour: #7e7e7e;
