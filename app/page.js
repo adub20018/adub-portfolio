@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ContactForm from "./components/ContactForm.js";
+// import ContactForm from "./components/ContactForm.js";
 import adub_pfp from "../public/adub-pfp.png";
 import jsLogo from "../public/JavaScript-logo.png";
 import cppLogo from "../public/cpp-logo.jpg";
@@ -145,7 +145,7 @@ export default function Home() {
 
         <div className={styles.contact}>
           <h1>Contact Me!</h1>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
       </main>
     </>

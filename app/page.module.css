@@ -188,10 +188,10 @@
   border-radius: 10px;
 }
 
-.contactForm {
+/* .contactForm {
   display: flex;
   flex-direction: column;
-  /* background-color: #552cf2; */
+  background-color: #552cf2;
   padding: 2rem;
   border-radius: 10px;
   text-align: left;
@@ -230,4 +230,4 @@
   background-color: #111119da;
   border: none;
   cursor: pointer;
-}
+} */
