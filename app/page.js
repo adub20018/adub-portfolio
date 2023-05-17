@@ -3,9 +3,9 @@ import React from "react";
 // import ContactForm from "./components/ContactForm.js";
 import adub_pfp from "../public/adub-pfp.png";
 import jsLogo from "../public/JavaScript-logo.png";
-import cppLogo from "../public/cpp-logo.jpg";
-import nextLogo from "../public/nextjs-logo.png";
-import reactLogo from "../public/react-logo.png";
+import cppLogo from "../public/cpp-logo.png";
+import nextLogo from "../public/nextjs-logo.svg";
+import reactLogo from "../public/react-logo.svg";
 import astroLogo from "../public/astro-logo.png";
 import gitLogo from "../public/git-logo.png";
 import vercelLogo from "../public/vercel-logo.png";
@@ -36,10 +36,16 @@ import styles from "./page.module.css";
 //   );
 // }
 
-function SkillCard({ langImgSrc, name }) {
+function SkillCard({ langImgSrc, name, color }) {
   return (
     <div className={styles.skillCard}>
-      <Image src={langImgSrc} alt={name} width={40} height={40} />
+      <Image
+        src={langImgSrc}
+        alt={name}
+        width={40}
+        height={40}
+        style={{ backgroundColor: color }}
+      />
       <p>{name}</p>
     </div>
   );
@@ -101,14 +107,18 @@ export default function Home() {
           </p>
           <h3 className={styles.skillList}></h3>
           <div className={styles.skillCardContainer}>
-            <SkillCard langImgSrc={cppLogo} name="C++" />
-            <SkillCard langImgSrc={jsLogo} name="JavaScript" />
-            <SkillCard langImgSrc={nextLogo} name="Next.js" />
-            <SkillCard langImgSrc={reactLogo} name="React" />
-            <SkillCard langImgSrc={astroLogo} name="Astro" />
+            <SkillCard langImgSrc={cppLogo} name="C++" color="#0159977e" />
+            <SkillCard
+              langImgSrc={jsLogo}
+              name="JavaScript"
+              color="#f0dc4d6b"
+            />
+            <SkillCard langImgSrc={nextLogo} name="Next.js" color="#ffffff6b" />
+            <SkillCard langImgSrc={reactLogo} name="React" color="#61dafb7e" />
+            <SkillCard langImgSrc={astroLogo} name="Astro" color="#3321827e" />
             {/* <SkillCard langImgSrc={scssLogo} name="SCSS" />
             <SkillCard langImgSrc={vercelLogo} name="Vercel" /> */}
-            <SkillCard langImgSrc={gitLogo} name="Git" />
+            <SkillCard langImgSrc={gitLogo} name="Git" color="#ef51326b" />
           </div>
         </div>
 

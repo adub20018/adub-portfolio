@@ -117,10 +117,15 @@
   display: flex;
   align-items: center;
   width: 12.5rem;
-  background-color: #1b1b22a2;
+  background-color: #242430dc;
   padding: 0.5rem;
   border-radius: 5px;
   transition: ease-in-out 0.2s;
+}
+.skillCard img {
+  /* background-color: #61dafb7e; */
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .skillCard p {
