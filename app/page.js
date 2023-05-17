@@ -47,7 +47,7 @@ function SkillCard({ langImgSrc, name }) {
 
 function ProjectCard({ projectImg, title, description, url, li1, li2, li3 }) {
   return (
-    <a href={url}>
+    <a className={styles.projectLink} href={url}>
       <div className={styles.projectCard}>
         <Image className={styles.projectImg} src={projectImg} alt={title} />
         <div className={styles.ProjectTextSect}>

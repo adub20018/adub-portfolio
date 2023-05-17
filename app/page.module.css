@@ -4,6 +4,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  justify-content: center;
 }
 
 .topNav {
@@ -136,11 +137,13 @@
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr 1fr;
   max-width: 80vw;
+  justify-content: center;
 }
 
 .projects h1 {
   margin-top: 10rem;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .projectCard {
@@ -168,7 +171,7 @@
 
 .projectCard h2 {
   margin-left: 1rem;
-  margin-top: 0.25rem;
+  margin-top: 0.8rem;
 }
 
 .projectCard p {
@@ -261,13 +264,17 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .main {
+    padding: 0;
+  }
   .projectCard:nth-child(even) {
     flex-direction: column;
   }
   .projectCard {
     flex-direction: column;
-    width: 50vw;
+    width: 70vw;
     height: auto;
+    align-items: center;
   }
 
   .projectCard img {
@@ -275,7 +282,7 @@
   }
   .projectCard p {
     background-color: transparent;
-    width: 45vw;
+    width: 65vw;
     justify-content: center;
   }
 }
@@ -283,6 +290,9 @@
 @media screen and (max-width: 685px) {
   .heroSection h1 {
     font-size: 3rem;
+  }
+  .projectCard {
+    width: 80vw;
   }
 }
 
@@ -292,5 +302,8 @@
   }
   .heroSection h1 {
     font-size: 2rem;
+  }
+  .projectCard p {
+    width: 75vw;
   }
 }
