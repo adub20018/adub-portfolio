@@ -329,6 +329,9 @@
 }
 
 @media screen and (max-width: 685px) {
+  .heroSection {
+    margin-top: -5rem;
+  }
   .heroSection h1 {
     font-size: 3rem;
   }
@@ -350,5 +353,21 @@
   }
   .projectCard p {
     width: 75vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroBtnDiv {
+    flex-direction: column;
+  }
+
+  .heroBtn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .heroSection {
+    margin-top: -12rem;
   }
 }
