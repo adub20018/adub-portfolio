@@ -61,15 +61,22 @@
   font-size: 1.2rem;
 }
 
+.heroBtnDiv {
+  display: flex;
+}
+
 .heroBtn {
   height: 3rem;
   width: 10rem;
   font-size: 1rem;
   background-image: linear-gradient(to right, #766dfa, #552cf2);
-  background-color: transparent;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 5px;
+  margin: 1rem;
   margin-top: 2.5rem;
   cursor: pointer;
   transition: ease 0.3s;
@@ -78,6 +85,31 @@
 
 .heroBtn:hover {
   transform: scale(1.1);
+  border: 1px solid white;
+}
+
+.heroBtn2 {
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  /* background-image: linear-gradient(to right, #766dfa, #552cf2); */
+  background-color: transparent;
+  border: 2px solid #766dfa;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 1rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  transition: ease 0.3s;
+  color: #fff;
+}
+.heroBtn2:hover {
+  transform: scale(1.1);
+  background-color: #766dfa;
+  border: 1px solid white;
 }
 
 .about {

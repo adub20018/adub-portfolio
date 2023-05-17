@@ -87,7 +87,14 @@ export default function Home() {
           <h1>Alex Malone</h1>
           <h2>Programmer specialising in Web Development</h2>
           <p>📍 New Zealand</p>
-          <button className={styles.heroBtn}>Get in touch</button>
+          <div className={styles.heroBtnDiv}>
+            <a href="https://github.com/adub20018" className={styles.heroBtn2}>
+              My Github
+            </a>
+            <a href="mailto:adubmalone@gmail.com" className={styles.heroBtn}>
+              Get in Touch
+            </a>
+          </div>
         </div>
 
         <div id="about" className={styles.about}>
@@ -107,18 +114,18 @@ export default function Home() {
           </p>
           <h3 className={styles.skillList}></h3>
           <div className={styles.skillCardContainer}>
-            <SkillCard langImgSrc={cppLogo} name="C++" color="#0159977e" />
+            <SkillCard langImgSrc={cppLogo} name="C++" color="#0159974b" />
             <SkillCard
               langImgSrc={jsLogo}
               name="JavaScript"
-              color="#f0dc4d6b"
+              color="#f0dc4d4b"
             />
-            <SkillCard langImgSrc={nextLogo} name="Next.js" color="#ffffff6b" />
-            <SkillCard langImgSrc={reactLogo} name="React" color="#61dafb7e" />
-            <SkillCard langImgSrc={astroLogo} name="Astro" color="#3321827e" />
+            <SkillCard langImgSrc={nextLogo} name="Next.js" color="#ffffff4b" />
+            <SkillCard langImgSrc={reactLogo} name="React" color="#61dafb4b" />
+            <SkillCard langImgSrc={astroLogo} name="Astro" color="#3321826b" />
             {/* <SkillCard langImgSrc={scssLogo} name="SCSS" />
             <SkillCard langImgSrc={vercelLogo} name="Vercel" /> */}
-            <SkillCard langImgSrc={gitLogo} name="Git" color="#ef51326b" />
+            <SkillCard langImgSrc={gitLogo} name="Git" color="#ef51324b" />
           </div>
         </div>
 
