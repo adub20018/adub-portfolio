@@ -71,6 +71,7 @@
   margin-top: 2.5rem;
   cursor: pointer;
   transition: ease 0.3s;
+  color: #fff;
 }
 
 .heroBtn:hover {
@@ -92,6 +93,10 @@
   font-size: 1.3rem;
   width: 80vw;
   max-width: 700px;
+}
+
+.bio span {
+  color: #fff;
 }
 
 .skillList {
@@ -275,8 +280,17 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 685px) {
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .skillCard {
     width: 160px;
+  }
+  .heroSection h1 {
+    font-size: 2rem;
   }
 }

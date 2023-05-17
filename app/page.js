@@ -45,30 +45,23 @@ function SkillCard({ langImgSrc, name }) {
   );
 }
 
-function ProjectCard({
-  projectImg,
-  title,
-  description,
-  url,
-  li1,
-  li2,
-  li3,
-  li4,
-}) {
+function ProjectCard({ projectImg, title, description, url, li1, li2, li3 }) {
   return (
-    <button href={url} className={styles.projectCard}>
-      <Image className={styles.projectImg} src={projectImg} alt={title} />
-      <div className={styles.ProjectTextSect}>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <h4>What i learned: </h4>
-        <ul>
-          <li>{li1}</li>
-          <li>{li2}</li>
-          <li>{li3}</li>
-        </ul>
+    <a href={url}>
+      <div className={styles.projectCard}>
+        <Image className={styles.projectImg} src={projectImg} alt={title} />
+        <div className={styles.ProjectTextSect}>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <h4>What i learned: </h4>
+          <ul>
+            <li>{li1}</li>
+            <li>{li2}</li>
+            <li>{li3}</li>
+          </ul>
+        </div>
       </div>
-    </button>
+    </a>
   );
 }
 
@@ -102,7 +95,9 @@ export default function Home() {
             philosophy, hiking, and gaming
             <br />
             <br />
-            Here are a few technologies I&apos;ve been working with:
+            <span>
+              Here are a few technologies I&apos;ve been working with:
+            </span>
           </p>
           <h3 className={styles.skillList}></h3>
           <div className={styles.skillCardContainer}>
