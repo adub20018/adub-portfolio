@@ -15,26 +15,26 @@ import lexfgWebsite from "../public/lexfg-website.png";
 import rapGPTImg from "../public/rapGPT-img.png";
 import styles from "./page.module.css";
 
-function TopNav() {
-  return (
-    <nav className={styles.topNav}>
-      <ul className={styles.navItems}>
-        <a href="/#home">
-          <li>Home</li>
-        </a>
-        <a href="/#about">
-          <li>About Me</li>
-        </a>
-        <a href="/#projects">
-          <li>Projects</li>
-        </a>
-        <a href="/#contact">
-          <li>Contact Me</li>
-        </a>
-      </ul>
-    </nav>
-  );
-}
+// function TopNav() {
+//   return (
+//     <nav className={styles.topNav}>
+//       <ul className={styles.navItems}>
+//         <a href="/#home">
+//           <li>Home</li>
+//         </a>
+//         <a href="/#about">
+//           <li>About Me</li>
+//         </a>
+//         <a href="/#projects">
+//           <li>Projects</li>
+//         </a>
+//         <a href="/#contact">
+//           <li>Contact Me</li>
+//         </a>
+//       </ul>
+//     </nav>
+//   );
+// }
 
 function SkillCard({ langImgSrc, name }) {
   return (
@@ -68,7 +68,7 @@ function ProjectCard({ projectImg, title, description, url, li1, li2, li3 }) {
 export default function Home() {
   return (
     <>
-      <TopNav />
+      {/* <TopNav /> */}
       <main id="home" className={styles.main}>
         <div className={styles.heroSection}>
           <Image
@@ -80,7 +80,7 @@ export default function Home() {
           />
           <h1>Alex Malone</h1>
           <h2>Programmer specialising in Web Development</h2>
-          <p>📍 New Zealand / Aotearoa</p>
+          <p>📍 New Zealand</p>
           <button className={styles.heroBtn}>Get in touch</button>
         </div>
 

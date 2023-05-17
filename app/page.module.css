@@ -156,12 +156,15 @@
   border: none;
   transition: ease 0.2s;
   text-align: left;
+  border-radius: 10px;
 }
 
 .projectImg {
   height: auto;
   height: 17.5rem;
   width: auto;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .projectCard:hover {
