@@ -101,12 +101,6 @@ a {
   text-decoration: none;
 }
 
-input[type="text"],
-input[type="email"] {
-  height: 1rem;
-  width: 5rem;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

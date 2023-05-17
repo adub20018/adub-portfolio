@@ -1,10 +1,11 @@
 .main {
-  display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  justify-content: center; */
+  /* padding: 6rem; */
   min-height: 100vh;
   justify-content: center;
+  margin-top: 15rem;
 }
 
 .topNav {
@@ -79,8 +80,8 @@
   transform: scale(1.1);
 }
 
-.skills {
-  margin-top: 20rem;
+.about {
+  margin-top: 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,16 +133,16 @@
 }
 
 .projects {
-  margin-top: 10rem;
+  margin-top: 14rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr;
-  max-width: 80vw;
-  justify-content: center;
+  grid-template-rows: 40px 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .projects h1 {
-  margin-top: 10rem;
+  margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
@@ -170,6 +171,7 @@
 .projectCard:hover {
   cursor: pointer;
   transform: scale(1.02);
+  box-shadow: 4px 4px 15px black;
 }
 
 .projectCard h2 {
@@ -197,9 +199,6 @@
 
 .projectCard:nth-child(even) {
   flex-direction: row-reverse;
-}
-
-.projectTextSect {
 }
 
 .contact {
@@ -266,7 +265,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .main {
     padding: 0;
   }
@@ -278,6 +277,7 @@
     width: 70vw;
     height: auto;
     align-items: center;
+    max-width: 450px;
   }
 
   .projectCard img {
@@ -286,6 +286,7 @@
   .projectCard p {
     background-color: transparent;
     width: 65vw;
+    max-width: 420px;
     justify-content: center;
   }
 }
@@ -301,7 +302,11 @@
 
 @media screen and (max-width: 480px) {
   .skillCard {
-    width: 160px;
+    width: 40vw;
+  }
+  .skillCard p {
+    font-size: 0.8rem;
+    margin-left: 8px;
   }
   .heroSection h1 {
     font-size: 2rem;

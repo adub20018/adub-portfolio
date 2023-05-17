@@ -84,7 +84,7 @@ export default function Home() {
           <button className={styles.heroBtn}>Get in touch</button>
         </div>
 
-        <div id="about" className={styles.skills}>
+        <div id="about" className={styles.about}>
           <h1>About Me</h1>
           <p className={styles.bio}>
             I&apos;m a 21 year old male from New Zealand, currently studying
