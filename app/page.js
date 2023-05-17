@@ -19,10 +19,18 @@ function TopNav() {
   return (
     <nav className={styles.topNav}>
       <ul className={styles.navItems}>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <a href="/#home">
+          <li>Home</li>
+        </a>
+        <a href="/#about">
+          <li>About Me</li>
+        </a>
+        <a href="/#projects">
+          <li>Projects</li>
+        </a>
+        <a href="/#contact">
+          <li>Contact Me</li>
+        </a>
       </ul>
     </nav>
   );
@@ -49,7 +57,7 @@ function ProjectCard({
 }) {
   return (
     <button href={url} className={styles.projectCard}>
-      <Image src={projectImg} alt={title} height={400} />
+      <Image className={styles.projectImg} src={projectImg} alt={title} />
       <div className={styles.ProjectTextSect}>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -58,7 +66,6 @@ function ProjectCard({
           <li>{li1}</li>
           <li>{li2}</li>
           <li>{li3}</li>
-          <li>{li4}</li>
         </ul>
       </div>
     </button>
@@ -69,7 +76,7 @@ export default function Home() {
   return (
     <>
       <TopNav />
-      <main className={styles.main}>
+      <main id="home" className={styles.main}>
         <div className={styles.heroSection}>
           <Image
             className={styles.pfp}
@@ -84,7 +91,7 @@ export default function Home() {
           <button className={styles.heroBtn}>Get in touch</button>
         </div>
 
-        <div className={styles.skills}>
+        <div id="about" className={styles.skills}>
           <h1>About Me</h1>
           <p className={styles.bio}>
             I&apos;m a 21 year old male from New Zealand, currently studying
@@ -111,7 +118,7 @@ export default function Home() {
         </div>
 
         <div className={styles.projects}>
-          <h1>Projects</h1>
+          <h1 id="projects">Projects</h1>
           <ProjectCard
             projectImg={decentralawWebsite}
             title="Decentralaw Law Firm Website"
@@ -120,7 +127,6 @@ export default function Home() {
             li1="Learned Astro framework"
             li2="Learned how to work with CMS"
             li3="Learned how to work with cloud hosting solutions"
-            li4="Learned how to use lighthouse tests"
           />
           <ProjectCard
             projectImg={lexfgWebsite}
@@ -129,8 +135,7 @@ export default function Home() {
             url="https://lexfg.netlify.app/"
             li1="Furthered knowledge of Astro framework"
             li2="Learned lessons of working with a group of customers"
-            li3=""
-            li4=""
+            li3="Learned how to use lighthouse tests"
           />
           <ProjectCard
             projectImg={rapGPTImg}
@@ -143,10 +148,10 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.contact}>
+        {/* <div id="contact" className={styles.contact}>
           <h1>Contact Me!</h1>
-          {/* <ContactForm /> */}
-        </div>
+          <ContactForm />
+        </div> */}
       </main>
     </>
   );

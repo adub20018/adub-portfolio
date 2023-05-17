@@ -19,11 +19,12 @@
   margin-right: 2.5rem;
 }
 
-.navItems li {
+.navItems a {
   display: flex;
   align-items: center;
   margin-left: 5rem;
   color: #fff;
+  list-style-type: none;
 }
 
 .navItems li:hover {
@@ -89,7 +90,8 @@
   text-align: center;
   color: #6b6c74;
   font-size: 1.3rem;
-  width: 650px;
+  width: 80vw;
+  max-width: 700px;
 }
 
 .skillList {
@@ -128,6 +130,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr 1fr;
+  max-width: 80vw;
 }
 
 .projects h1 {
@@ -136,7 +139,8 @@
 }
 
 .projectCard {
-  width: auto;
+  width: 80vw;
+  height: auto;
   background-image: linear-gradient(to right, #766dfa, #552cf2);
   padding: 1rem;
   display: flex;
@@ -145,6 +149,13 @@
   transition: ease 0.2s;
   text-align: left;
 }
+
+.projectImg {
+  height: auto;
+  height: 17.5rem;
+  width: auto;
+}
+
 .projectCard:hover {
   cursor: pointer;
   transform: scale(1.02);
@@ -159,7 +170,7 @@
   background-color: #111119da;
   padding: 0.8rem;
   width: 420px;
-  margin-left: -4rem;
+  /* margin-left: -4rem; */
   margin-top: 2rem;
 }
 
@@ -231,3 +242,41 @@
   border: none;
   cursor: pointer;
 } */
+
+@media screen and (max-width: 1250px) {
+  .projectImg {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .projectCard p {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projectCard:nth-child(even) {
+    flex-direction: column;
+  }
+  .projectCard {
+    flex-direction: column;
+    width: 50vw;
+    height: auto;
+  }
+
+  .projectCard img {
+    width: 100%;
+  }
+  .projectCard p {
+    background-color: transparent;
+    width: 45vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skillCard {
+    width: 160px;
+  }
+}
