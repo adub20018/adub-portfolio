@@ -87,15 +87,15 @@ export default function Home() {
         <div className={styles.skills}>
           <h1>About Me</h1>
           <p className={styles.bio}>
-            I'm a 21 year old male from New Zealand, currently studying computer
-            science. I had been self-teaching web development for 1 year before
-            deciding to further my education at Massey University.
+            I&apos;m a 21 year old male from New Zealand, currently studying
+            computer science. I had been self-teaching web development for 1
+            year before deciding to further my education at Massey University.
             <br /> <br />
-            Outside of programming, I'm interested in astronomy, philosophy,
-            hiking, and gaming
+            Outside of programming, I&apos;m interested in astronomy,
+            philosophy, hiking, and gaming
             <br />
             <br />
-            Here are a few technologies I've been working with:
+            Here are a few technologies I&apos;ve been working with:
           </p>
           <h3 className={styles.skillList}></h3>
           <div className={styles.skillCardContainer}>
