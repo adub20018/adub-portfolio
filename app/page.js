@@ -12,6 +12,7 @@ import gitLogo from "../public/git-logo.png";
 import decentralawWebsite from "../public/decentralaw-website.png";
 import lexfgWebsite from "../public/lexfg-website.png";
 import rapGPTImg from "../public/rapGPT-img.png";
+import openGraphImg from "../public/open-graph.png";
 import styles from "./page.module.css";
 
 // function SiteHead(
@@ -140,7 +141,7 @@ export default function Home() {
         />
 
         {/* OpenGraph Cards */}
-        <meta property="og:image" content="/open-graph.png" />
+        <meta property="og:image" content={openGraphImg} />
         <meta
           property="og:image:alt"
           content="The home page of Alex Malone's programming / website development portfolio"
