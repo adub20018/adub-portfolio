@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import adub_pfp from "../public/adub-pfp.png";
@@ -93,10 +94,10 @@ export default function Home() {
           <h2>Programmer specialising in Web Development</h2>
           <p>📍 New Zealand / Aotearoa</p>
           <div className={styles.heroBtnDiv}>
-            <a href="https://github.com/adub20018" className={styles.heroBtn2}>
+            <a href="https://github.com/adub20018" className={styles.heroBtn}>
               My Github
             </a>
-            <a href="mailto:adubmalone@gmail.com" className={styles.heroBtn}>
+            <a href="mailto:adubmalone@gmail.com" className={styles.heroBtn2}>
               Get in Touch
             </a>
           </div>
@@ -111,6 +112,7 @@ export default function Home() {
             <br /> <br />
             Outside of programming, I&apos;m interested in astronomy,
             philosophy, hiking, and gaming
+            <br />
             <br />
             <br />
             <span>
@@ -167,6 +169,10 @@ export default function Home() {
 
         <div id="contact" className={styles.contact}>
           <h1>Let&apos;s Talk!</h1>
+          <p>
+            Don&apos;t hesitate to contact me for any questions, proposals, or
+            projects you want to work together on
+          </p>
           <a href="mailto:adubmalone@gmail.com">Send me an Email!</a>
         </div>
         <Footer />

@@ -5,7 +5,7 @@
   /* padding: 6rem; */
   min-height: 100vh;
   justify-content: center;
-  margin-top: 15rem;
+  margin-top: 11rem;
 }
 
 .topNav {
@@ -53,42 +53,18 @@
 .heroSection h2 {
   margin-top: 1rem;
   font-size: 1.35rem;
-  color: #6b6c74;
   text-align: center;
 }
 .heroSection p {
   margin-top: 1rem;
   font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.678);
 }
 
 .heroBtnDiv {
   display: flex;
 }
-
 .heroBtn {
-  height: 3rem;
-  width: 10rem;
-  font-size: 1rem;
-  background-image: linear-gradient(to right, #766dfa, #552cf2);
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 5px;
-  margin: 1rem;
-  margin-top: 2.5rem;
-  cursor: pointer;
-  transition: ease 0.3s;
-  color: #fff;
-}
-
-.heroBtn:hover {
-  transform: scale(1.1);
-  border: 1px solid white;
-}
-
-.heroBtn2 {
   height: 3rem;
   width: 10rem;
   font-size: 1rem;
@@ -104,16 +80,47 @@
   margin-top: 2.5rem;
   cursor: pointer;
   transition: ease 0.3s;
-  color: #fff;
+  color: #766dfa;
+  box-shadow: #552cf2 0px 10px 20px -6px;
+  font-weight: 600;
 }
-.heroBtn2:hover {
-  transform: scale(1.1);
+.heroBtn:hover {
+  /* transform: scale(1.1); */
   background-color: #766dfa;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  color: white;
+  box-shadow: #552cf2 0px 0px 12px 0px;
+}
+
+.heroBtn2 {
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, #766dfa, #552cf2);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  transition: ease 0.4s;
+  color: #111119;
+  box-shadow: #552cf2 0px 10px 20px -6px;
+  font-weight: 600;
+}
+
+.heroBtn2:hover {
+  /* transform: scale(1.1); */
+  /* border: 1px solid white; */
+  box-shadow: #552cf2 0px 0px 12px 0px;
+  color: white;
 }
 
 .about {
-  margin-top: 16rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,14 +130,13 @@
 .bio {
   margin-top: 1rem;
   text-align: center;
-  color: #6b6c74;
   font-size: 1.3rem;
   width: 80vw;
   max-width: 700px;
 }
 
 .bio span {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.678);
 }
 
 .skillList {
@@ -150,6 +156,7 @@
   align-items: center;
   width: 12.5rem;
   background-color: #242430dc;
+  color: rgba(255, 255, 255, 0.85);
   padding: 0.5rem;
   border-radius: 5px;
   transition: ease-in-out 0.2s;
@@ -170,7 +177,7 @@
 }
 
 .projects {
-  margin-top: 12rem;
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 40px 1fr 1fr;
@@ -203,13 +210,13 @@
   height: auto;
   height: 17.5rem;
   width: auto;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.678);
   border-radius: 5px;
 }
 
 .projectCard:hover {
-  transform: scale(1.02);
-  box-shadow: 4px 4px 15px black;
+  transform: translateY(-7px);
+  box-shadow: black 0px 10px 20px -6px;
 }
 
 .projectCard h2 {
@@ -224,7 +231,7 @@
   padding: 0.8rem;
   width: 420px;
   margin-top: 2rem;
-  color: #bfc0ce;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .projectCard h4 {
@@ -265,23 +272,38 @@
   height: auto;
   margin-top: 6rem;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* background-color: #552cf2;
   padding: 2rem;
   border-radius: 10px; */
 }
 .contact h1 {
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+}
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2.6rem;
+  width: 75vw;
+  min-width: 240px;
 }
 .contact a {
-  margin-top: 5rem;
-  padding: 1.5rem 4rem;
+  height: 3.8rem;
+  width: 17rem;
   background-color: #552cf2;
+  font-size: 1.3rem;
   border-radius: 5px;
   transition: ease 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 .contact a:hover {
-  padding: 1.8rem 4.5rem;
-  border: 1px solid white;
+  transform: scale(1.08);
+  border: 1px solid rgba(255, 255, 255, 0.678);
 }
 
 .footer {
@@ -290,11 +312,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #766dfac2, #552cf2c2);
+  background-image: linear-gradient(to right, #766dfa, #552cf2);
 }
 .footer p {
   width: 80vw;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1250px) {
@@ -356,7 +379,7 @@
 
 @media screen and (max-width: 685px) {
   .heroSection {
-    margin-top: -5rem;
+    margin-top: 0rem;
   }
   .heroSection h1 {
     font-size: 3rem;
@@ -393,8 +416,8 @@
     flex-direction: column;
   }
 
-  .heroBtn {
-    margin-top: 0;
+  .heroBtn2 {
+    margin-top: 0.8rem;
   }
 }
 
