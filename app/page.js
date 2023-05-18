@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-// import ContactForm from "./components/ContactForm.js";
 import adub_pfp from "../public/adub-pfp.png";
 import jsLogo from "../public/JavaScript-logo.png";
 import cppLogo from "../public/cpp-logo.png";
@@ -8,8 +7,6 @@ import nextLogo from "../public/nextjs-logo.svg";
 import reactLogo from "../public/react-logo.svg";
 import astroLogo from "../public/astro-logo.png";
 import gitLogo from "../public/git-logo.png";
-import vercelLogo from "../public/vercel-logo.png";
-import scssLogo from "../public/scss-logo.png";
 import decentralawWebsite from "../public/decentralaw-website.png";
 import lexfgWebsite from "../public/lexfg-website.png";
 import rapGPTImg from "../public/rapGPT-img.png";
@@ -56,11 +53,11 @@ function ProjectCard({ projectImg, title, description, url, li1, li2, li3 }) {
     <a className={styles.projectLink} href={url}>
       <div className={styles.projectCard}>
         <Image className={styles.projectImg} src={projectImg} alt={title} />
-        <div className={styles.ProjectTextSect}>
+        <div className={styles.projectTextSect}>
           <h2>{title}</h2>
-          <p>{description}</p>
-          <h4>What i learned: </h4>
+          <p className={styles.projectText}>{description}</p>
           <ul>
+            <h4>What i learned: </h4>
             <li>{li1}</li>
             <li>{li2}</li>
             <li>{li3}</li>
@@ -68,6 +65,14 @@ function ProjectCard({ projectImg, title, description, url, li1, li2, li3 }) {
         </div>
       </div>
     </a>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <p>@ Alex Malone 2023 | Built with Next.js | Deployed on Vercel</p>
+    </footer>
   );
 }
 
@@ -86,7 +91,7 @@ export default function Home() {
           />
           <h1>Alex Malone</h1>
           <h2>Programmer specialising in Web Development</h2>
-          <p>📍 New Zealand</p>
+          <p>📍 New Zealand / Aotearoa</p>
           <div className={styles.heroBtnDiv}>
             <a href="https://github.com/adub20018" className={styles.heroBtn2}>
               My Github
@@ -160,10 +165,16 @@ export default function Home() {
           />
         </div>
 
-        {/* <div id="contact" className={styles.contact}>
-          <h1>Contact Me!</h1>
-          <ContactForm />
-        </div> */}
+        <div id="contact" className={styles.contact}>
+          <h1>Let's Talk!</h1>
+          <p>
+            If you have any questions, proposals, or want to work together on
+            something together
+          </p>
+          <a href="mailto:adubmalone@gmail.com">Send me an Email!</a>
+          {/* <ContactForm /> */}
+        </div>
+        <Footer />
       </main>
     </>
   );
