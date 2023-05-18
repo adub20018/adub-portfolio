@@ -137,7 +137,7 @@ export default function Home() {
         </div>
 
         <div className={styles.projects}>
-          <h1 id="projects">Projects</h1>
+          <h1 id="projects">Previous Work / Projects</h1>
           <ProjectCard
             projectImg={decentralawWebsite}
             title="Decentralaw Law Firm Website"
