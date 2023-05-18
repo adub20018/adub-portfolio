@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Head from "next/head";
 import adub_pfp from "../public/adub-pfp.png";
 import jsLogo from "../public/JavaScript-logo.png";
 import cppLogo from "../public/cpp-logo.png";
@@ -13,6 +14,42 @@ import lexfgWebsite from "../public/lexfg-website.png";
 import rapGPTImg from "../public/rapGPT-img.png";
 import styles from "./page.module.css";
 
+function SiteHead(
+  imgSrc,
+  imgDescription,
+  title,
+  description,
+  url,
+  twitterHandle
+) {
+  return (
+    <Head>
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content={description} />
+      <link rel="canonical" href={url} />
+      <meta
+        name="keywords"
+        content="website development, web dev, website, new zealand, palmerston north"
+      />
+
+      {/* OpenGraph Cards */}
+      <meta property="og:image" content={imgSrc} />
+      <meta property="og:image:alt" content={imgDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={url} />
+      <meta property="og:type" content="website" />
+
+      {/* twitter cards */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={imgSrc} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:site" content={twitterHandle} />
+    </Head>
+  );
+}
 // function TopNav() {
 //   return (
 //     <nav className={styles.topNav}>
@@ -80,6 +117,14 @@ function Footer() {
 export default function Home() {
   return (
     <>
+      <SiteHead
+        imgSrc="../public/open-graph.png"
+        imgDescription="The home page of Alex Malone's programming / website development portfolio"
+        title="Alex Malone's Web Dev Portfolio"
+        description="Portfolio website, showcasing the programming and web development skills and work from Alex Malone"
+        url="https://adub.info"
+        twitterHandle="@adub20018"
+      />
       {/* <TopNav /> */}
       <main id="home" className={styles.main}>
         <div className={styles.heroSection}>
@@ -111,7 +156,7 @@ export default function Home() {
             year before deciding to further my education at Massey University.
             <br /> <br />
             Outside of programming, I&apos;m interested in astronomy,
-            philosophy, hiking, and gaming
+            philosophy, hiking, music, and gaming
             <br />
             <br />
             <br />
