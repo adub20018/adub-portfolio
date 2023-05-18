@@ -167,10 +167,6 @@ export default function Home() {
 
         <div id="contact" className={styles.contact}>
           <h1>Let&apos;s Talk!</h1>
-          <p>
-            If you have any questions, proposals, or want to work together on
-            something together
-          </p>
           <a href="mailto:adubmalone@gmail.com">Send me an Email!</a>
         </div>
         <Footer />

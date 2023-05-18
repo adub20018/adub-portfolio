@@ -263,19 +263,17 @@
 .contact {
   text-align: center;
   height: auto;
-  margin: 2rem;
   margin-top: 6rem;
+  margin-bottom: 5rem;
   /* background-color: #552cf2;
   padding: 2rem;
   border-radius: 10px; */
 }
-.contact p {
-  margin-top: 2rem;
+.contact h1 {
   margin-bottom: 3.5rem;
-  font-size: 1.2rem;
 }
 .contact a {
-  margin-top: 2rem;
+  margin-top: 5rem;
   padding: 1.5rem 4rem;
   background-color: #552cf2;
   border-radius: 5px;
