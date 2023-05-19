@@ -189,18 +189,18 @@ export default function Home() {
         <div id="about" className={styles.about}>
           <h1>About Me</h1>
           <p className={styles.bio}>
-            I&apos;m a 21 year old male from New Zealand, currently studying
-            computer science. I had been self-teaching web development for 1
-            year before deciding to further my education at Massey University.
+            As a passionate, self-driven individual, I&apos;m pursuing a
+            Computer Science degree at Massey University. My journey into
+            technology started with a year of self-taught web development, which
+            lead to me deciding to further my education at university.
             <br /> <br />
-            Outside of programming, I&apos;m interested in astronomy,
-            philosophy, hiking, music, and gaming
-            <br />
-            <br />
-            <br />
-            <span>
-              Here are a few technologies I&apos;ve been working with:
-            </span>
+            Outside of programming, I&apos;m interested in philosophy, music,
+            astronomy, hiking, and gaming.
+          </p>
+          <h2>My Skills:</h2>
+          <p className={styles.skillsText}>
+            In the process of shaping my career in programming, I have gained
+            experience in several technologies including:
           </p>
           <h3 className={styles.skillList}></h3>
           <div className={styles.skillCardContainer}>
@@ -223,30 +223,30 @@ export default function Home() {
           <h1 id="projects">Previous Work / Projects</h1>
           <ProjectCard
             projectImg={decentralawWebsite}
-            title="Decentralaw Law Firm Website"
-            description="I used Astro to create the website and blog for the Decentralaw Law Firm. Used Netlify for hosting and as the content management system"
+            title="Decentralawyer: Law Firm Website/Blog"
+            description="I developed a website and blog for the innovative technology lawyer 'The Decentralawyer'. Leveraged the power of Astro for front-end development and used Netlify as a CMS and deployment platform."
             url="https://decentralaw.ai/"
-            li1="Learned Astro framework"
-            li2="Learned how to work with CMS"
-            li3="Learned how to work with cloud hosting solutions"
+            li1="Experience in full-stack web development using Astro and Netlify"
+            li2="Hands-on practice with Netlify CMS for smooth content management"
+            li3="Harnessed SVG paths to overcome CSS challenges"
           />
           <ProjectCard
             projectImg={lexfgWebsite}
-            title="LexFG Law Firm Website"
-            description="After the last site, i was reapproached to develop another website, this time for the LexFG Law Firm."
+            title="LexFG: Law Firm Website"
+            description="Developed the website for LexFG, another tech based law firm. Again, built the front-end using Astro and deployed on Netlify."
             url="https://lexfg.netlify.app/"
-            li1="Furthered knowledge of Astro framework"
-            li2="Learned lessons of working with a group of customers"
-            li3="Learned how to use lighthouse tests"
+            li1="Furthered development skills with Astro"
+            li2="Learned to work and communicate effectively within a larger team of clients"
+            li3="Understanding the nuances of deploying sites on Netlify platform"
           />
           <ProjectCard
             projectImg={rapGPTImg}
-            title="GPT-3 Rap Lyric Generator"
-            description="I used the OpenAI API and Next.js to create this rap lyric generator."
+            title="RapGPT: OpenAI Rap Lyric Generator"
+            description="Designed and built RapGPT, an application leveraging OpenAI API to generate rap lyrics based on user-provided context. Utilized Next.js and React for the application's development, and deployed on Vercel."
             url="https://rapgpt.netlify.app"
-            li1="Learned how to work with API's"
-            li2="Gained experience in AI prompt engineering"
-            li3="Learned how to harness the power of Vercel x Next.js"
+            li1="Acquired knowledge in using APIs."
+            li2="Furthered experience with Next.js and React"
+            li3="Gained experience in AI prompt engineering"
           />
         </div>
 

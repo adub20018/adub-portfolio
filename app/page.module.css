@@ -136,12 +136,21 @@
   max-width: 700px;
 }
 
-.bio span {
+.about h2 {
+  margin-top: 4rem;
+  font-size: 35px;
+}
+.skillsText {
+  margin-top: 1rem;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.678);
+  width: 80vw;
+  max-width: 750px;
+  text-align: center;
 }
 
 .skillList {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   width: 500px;
 }
 
@@ -196,7 +205,7 @@
 
 .projectCard {
   width: 80vw;
-  max-width: 880px;
+  max-width: 1000px;
   height: auto;
   background-image: linear-gradient(to right, #766dfac2, #552cf2c2);
   padding: 1rem;
@@ -232,7 +241,7 @@
   background-color: #111119bd;
   border-radius: 0 5px 5px 0px;
   padding: 0.8rem;
-  width: 420px;
+  width: 100%;
   margin-top: 2rem;
   color: rgba(255, 255, 255, 0.8);
 }
