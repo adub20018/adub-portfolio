@@ -3,9 +3,14 @@
   align-items: center;
   justify-content: center; */
   /* padding: 6rem; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 11rem;
+  align-items: center;
+  /* margin-top: 11rem; */
 }
 
 .topNav {
@@ -38,11 +43,18 @@
 }
 
 .heroSection {
-  margin-top: 5rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heroSection,
+.about,
+.projects,
+.contact {
+  margin-top: 180px;
 }
 
 .heroSection h1 {
@@ -81,7 +93,7 @@
   cursor: pointer;
   transition: ease 0.3s;
   color: #766dfa;
-  box-shadow: #552cf2 0px 10px 20px -6px;
+  /* box-shadow: #552cf2 0px 10px 20px -6px; */
   font-weight: 600;
 }
 .heroBtn:hover {
@@ -108,7 +120,7 @@
   cursor: pointer;
   transition: ease 0.4s;
   color: #111119;
-  box-shadow: #552cf2 0px 10px 20px -6px;
+  /* box-shadow: #552cf2 0px 10px 20px -6px; */
   font-weight: 600;
 }
 
@@ -120,7 +132,8 @@
 }
 
 .about {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,7 +200,6 @@
 }
 
 .projects {
-  margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 40px 1fr 1fr;
@@ -203,8 +215,8 @@
 }
 
 .projectCard {
-  width: 80vw;
-  max-width: 1000px;
+  width: 85vw;
+  max-width: 1200px;
   height: auto;
   background-image: linear-gradient(to right, #766dfac2, #552cf2c2);
   padding: 1rem;
@@ -218,8 +230,8 @@
 }
 
 .projectImg {
-  height: auto;
-  height: 17.5rem;
+  min-height: 17.5rem;
+  height: 20rem;
   width: auto;
   border: 2px solid rgba(255, 255, 255, 0.678);
   border-radius: 5px;
@@ -318,7 +330,6 @@
 }
 
 .footer {
-  margin-top: 7.5rem;
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -326,7 +337,7 @@
   background-image: linear-gradient(to right, #766dfa, #552cf2);
 }
 .footer p {
-  width: 80vw;
+  width: 100vw;
   text-align: center;
   font-size: 1.1rem;
 }
@@ -337,16 +348,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .projectCard p {
-    width: 350px;
-  }
-}
-
 @media screen and (max-width: 875px) {
-  .main {
-    padding: 0;
-  }
   .projects a:nth-child(odd) .projectCard {
     flex-direction: column;
   }
@@ -389,14 +391,19 @@
 }
 
 @media screen and (max-width: 685px) {
-  .heroSection {
-    margin-top: 0rem;
-  }
   .heroSection h1 {
     font-size: 3rem;
   }
   .projectCard {
     width: 80vw;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .projects h1 {
+    height: auto;
+    width: 80vw;
+    margin-bottom: 4rem;
   }
 }
 
@@ -432,8 +439,20 @@
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 330px) {
+  .projects h1 {
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-height: 720px) and (max-width: 400px) {
   .heroSection {
-    margin-top: -12rem;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-height: 600px) and (max-width: 340px) {
+  .heroSection {
+    margin-top: 2rem;
   }
 }

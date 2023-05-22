@@ -70,7 +70,7 @@ export default function Home() {
             height={125}
           />
           <h1>Alex Malone</h1>
-          <h2>Programmer specialising in Web Development</h2>
+          <h2>Software & Website Developer</h2>
           <p>📍 New Zealand / Aotearoa</p>
           <div className={styles.heroBtnDiv}>
             <a href="https://github.com/adub20018" className={styles.heroBtn}>
@@ -85,13 +85,14 @@ export default function Home() {
         <div id="about" className={styles.about}>
           <h1>About Me</h1>
           <p className={styles.bio}>
-            As a passionate, self-driven individual, I&apos;m pursuing a
-            Computer Science degree at Massey University. My journey into
-            technology started with a year of self-taught web development, which
-            lead to me deciding to further my education at university.
+            I&apos;m a 21 year old male, currently studying a computer science
+            degree at Massey University. Outside of university, I have 1 year of
+            self-taught software/website development experience, as well as 6
+            months of on/off freelance experience in website development.
             <br /> <br />
-            Outside of programming, I&apos;m interested in philosophy, music,
-            astronomy, hiking, and gaming.
+            I&apos;m driven by a passion of philosophy, and its role in
+            technology. Particularly the area of epistemology, the nature of
+            knowledge.
           </p>
           <h2>My Skills:</h2>
           <p className={styles.skillsText}>
@@ -118,18 +119,18 @@ export default function Home() {
           <ProjectCard
             projectImg={decentralawWebsite}
             title="Decentralawyer: Law Firm Website/Blog"
-            description="I developed a website and blog for the innovative technology lawyer 'The Decentralawyer'. Leveraged the power of Astro for front-end development and used Netlify as a CMS and deployment platform."
+            description="Created a dynamic website and blog for a leading legal engineering firm. Utilized Astro, JavaScript, and SCSS. Configured on Netlify, I leveraged the git gateway, CMS, and hosting features for maximum efficiency and usability for the client."
             url="https://decentralaw.ai/"
-            li1="Experience in full-stack web development using Astro and Netlify"
+            li1="Experience in component based web development using Astro and JavaScript"
             li2="Hands-on practice with Netlify CMS for smooth content management"
-            li3="Harnessed SVG paths to overcome CSS challenges"
+            li3="Strengthened skills in client management and project execution processes"
           />
           <ProjectCard
             projectImg={lexfgWebsite}
             title="LexFG: Law Firm Website"
             description="Developed the website for LexFG, another tech based law firm. Again, built the front-end using Astro and deployed on Netlify."
             url="https://lexfg.netlify.app/"
-            li1="Furthered development skills with Astro"
+            li1="Furthered development skills with Astro and JavaScript"
             li2="Learned to work and communicate effectively within a larger team of clients"
             li3="Understanding the nuances of deploying sites on Netlify platform"
           />
